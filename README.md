@@ -1,87 +1,49 @@
-This repository contains my internship Task 1 submission for cleaning and preparing the **Hotel Booking Demand dataset**.  
-The project demonstrates data wrangling, feature engineering, and documentation skills.
+# 📊 ApexPlanet Data Analytics Internship – Task 1
+## Data Cleaning, Preprocessing & Exploratory Data Analysis (EDA)using the Superstore Sales Dataset
 
-# 🏨 Hotel Booking Demand - Data Cleaning & Preprocessing
+> **Performed end-to-end data cleaning, preprocessing, and feature engineering to transform raw Superstore Sales data into a clean, analysis-ready dataset for business intelligence and advanced analytics.**
 
-## 📌 Overview
-
-This repository presents an end-to-end **data cleaning and preprocessing pipeline** for the **Hotel Booking Demand Dataset** using Python. The project focuses on transforming raw hotel booking data into a clean, consistent, and analysis-ready dataset through data quality assessment, feature engineering, and comprehensive documentation.
-
-The cleaned dataset is suitable for **Business Intelligence, Data Analytics, Machine Learning, and Data Visualization** projects.
-
----
-
-## 📂 Repository Contents
-
-| File                                  | Description                                                                |
-| ------------------------------------- | -------------------------------------------------------------------------- |
-| **Hotel_Bookings_Cleaning.ipynb**     | Complete Jupyter Notebook containing the end-to-end data cleaning workflow |
-| **hotel_bookings.csv**                | Original raw dataset                                                       |
-| **sample_hotel_bookings.csv**         | Sample of the raw dataset for quick preview                                |
-| **cleaned_hotel_bookings.csv**        | Final cleaned and preprocessed dataset                                     |
-| **sample_cleaned_hotel_bookings.csv** | Preview of the cleaned dataset                                             |
-| **data_dictionary_with_examples.csv** | Data dictionary with feature descriptions and sample values                |
-| **data_dictionary.xlsx**              | Professionally formatted data dictionary                                   |
+![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?logo=pandas)
+![NumPy](https://img.shields.io/badge/NumPy-Scientific%20Computing-013243?logo=numpy)
+![Status](https://img.shields.io/badge/Project-Completed-success)
 
 ---
 
-## 🛠️ Data Cleaning Process
+# 📖 Project Overview
 
-The following preprocessing steps were performed:
+This repository contains **Task 1** completed during the **ApexPlanet Data Analytics Internship**.
 
-* ✔ Handled missing values using appropriate imputation techniques.
-* ✔ Removed irrelevant and highly sparse columns.
-* ✔ Eliminated duplicate records.
-* ✔ Standardized categorical values for consistency.
-* ✔ Merged fragmented date columns into a single **arrival_date** field.
-* ✔ Engineered new features:
+The objective of this project was to clean and preprocess the **Superstore Sales Dataset** by improving data quality through missing value handling, duplicate removal, data standardization, outlier treatment, and feature engineering.
 
-  * `total_guests`
-  * `stay_length`
-  * `is_weekend`
-* ✔ Detected and treated outliers using the **Interquartile Range (IQR)** method.
-* ✔ Generated a comprehensive **Data Dictionary** with column descriptions and examples.
+The cleaned dataset provides a reliable foundation for SQL analysis, data visualization, dashboard development, and machine learning.
 
 ---
 
-## 📊 Dataset Information
+# 🎯 Objectives
 
-| Attribute         | Value                |
-| ----------------- | -------------------- |
-| Dataset           | Hotel Booking Demand |
-| Original Records  | 119,390              |
-| Original Features | 33                   |
-| Cleaned Records   | 87,377               |
-| Cleaned Features  | 31                   |
-
----
-
-## 💻 Technologies Used
-
-* Python
-* Pandas
-* NumPy
-* Jupyter Notebook
-* OpenPyXL
+- Assess data quality
+- Handle missing values
+- Remove duplicate records
+- Standardize data formats
+- Detect and treat outliers
+- Engineer meaningful business features
+- Prepare data for analysis and visualization
 
 ---
 
-## 🚀 Skills Demonstrated
+# 🛠️ Technology Stack
 
-* Data Cleaning
-* Data Wrangling
-* Data Preprocessing
-* Feature Engineering
-* Missing Value Imputation
-* Outlier Detection
-* Data Validation
-* Python Programming
-* Pandas
-* NumPy
+| Category | Tools |
+|----------|-------|
+| Programming Language | Python |
+| Data Analysis | Pandas, NumPy |
+| Development Environment | Jupyter Notebook |
+| Data Processing | Data Cleaning & Feature Engineering |
 
 ---
 
-## 📈 Workflow
+# 🔄 Data Cleaning Workflow
 
 ```text
 Raw Dataset
@@ -90,7 +52,7 @@ Raw Dataset
 Data Inspection
       │
       ▼
-Missing Value Treatment
+Missing Value Analysis
       │
       ▼
 Duplicate Removal
@@ -102,7 +64,7 @@ Data Standardization
 Feature Engineering
       │
       ▼
-Outlier Treatment
+Outlier Detection
       │
       ▼
 Clean Dataset
@@ -110,32 +72,160 @@ Clean Dataset
 
 ---
 
-## 📊 Business Applications
+# 🧹 Data Preprocessing Steps
 
-The cleaned dataset can be used for:
+### ✔ Data Quality Assessment
 
-* Business Intelligence Dashboards
-* Customer Segmentation
-* Booking Cancellation Analysis
-* Revenue Analytics
-* Hotel Performance Analysis
-* Demand Forecasting
-* Machine Learning Models
+- Examined dataset structure
+- Verified data types
+- Checked missing values
+- Identified duplicate records
 
 ---
 
-## 📚 Dataset Source
+### ✔ Missing Value Handling
 
-**Hotel Booking Demand Dataset**
-
-https://www.kaggle.com/datasets/jessemostipak/hotel-booking-demand
+- Detected missing values
+- Applied suitable imputation techniques
+- Ensured data completeness for analysis
 
 ---
 
-## 🚀 Getting Started
+### ✔ Duplicate Removal
+
+- Identified duplicate transactions
+- Removed duplicate records to improve data accuracy
+
+---
+
+### ✔ Data Standardization
+
+Standardized:
+
+- Order Date
+- Ship Date
+- Category
+- Sub-Category
+- Region
+- Segment
+- State
+
+to ensure consistency throughout the dataset.
+
+---
+
+### ✔ Feature Engineering
+
+Created new analytical features such as:
+
+- Order Month
+- Order Year
+- Profit Margin
+- Shipping Duration
+
+These features improve business reporting and downstream analytics.
+
+---
+
+### ✔ Outlier Detection
+
+Applied statistical methods (IQR) to identify and handle outliers in:
+
+- Sales
+- Profit
+- Quantity
+- Discount
+
+---
+
+# 📊 Dataset Summary
+
+| Feature | Details |
+|----------|---------|
+| Dataset | Superstore Sales |
+| Data Type | Retail Sales Transactions |
+| Data Cleaning | Completed |
+| Missing Values | Handled |
+| Duplicate Records | Removed |
+| Outlier Treatment | IQR Method |
+| Feature Engineering | Completed |
+
+---
+
+# 💡 Project Outcomes
+
+- Improved dataset quality and consistency
+- Reduced redundancy by removing duplicate records
+- Standardized business attributes
+- Created additional analytical features
+- Prepared a clean dataset for SQL, Power BI, and Machine Learning
+- Documented the cleaned dataset for future use
+
+---
+
+# 🚀 Skills Demonstrated
+
+- Data Cleaning
+- Data Preprocessing
+- Data Wrangling
+- Feature Engineering
+- Data Quality Assessment
+- Missing Value Treatment
+- Outlier Detection
+- Python Programming
+- Pandas
+- NumPy
+- Jupyter Notebook
+
+---
+
+# ▶️ Getting Started
 
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/Hariomdubey01/task1.git
+git clone https://github.com/Hariomdubey01/Apexplanet-task1.git
 ```
+---
+
+# 📁 Dataset
+
+**Dataset:** Superstore Sales
+
+The dataset contains retail sales information including:
+
+- Order ID
+- Customer ID
+- Customer Name
+- Segment
+- Region
+- State
+- Category
+- Sub-Category
+- Product Name
+- Sales
+- Quantity
+- Discount
+- Profit
+- Order Date
+- Ship Date
+- Ship Mode
+
+---
+
+# 📌 Business Value
+
+This project establishes a high-quality data foundation for:
+
+- Business Intelligence Dashboards
+- Sales Performance Analysis
+- Customer Segmentation
+- Profitability Analysis
+- Sales Forecasting
+- Predictive Analytics
+- Executive Reporting
+
+---
+---
+
+## ⭐ If you found this project useful, consider giving it a **Star ⭐**.
